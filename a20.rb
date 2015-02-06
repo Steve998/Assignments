@@ -3,7 +3,8 @@ require 'active_support'
 require 'active_support/all'
 
 puts "Show the date of the beginning of the current week"
-puts Date.beginning_of_week.capitalize
+puts (Date.today).at_beginning_of_week
+
 
 puts " "
 
@@ -18,12 +19,18 @@ puts (Date.today + 365).strftime("%A")
 puts " "
 
 puts "Show what day of the week the user\'s birthday will be on this year"
-puts Date.new(2015,12,18).strftime("%A")
+puts "Enter birthday: "
+birthday = gets.chomp
+puts birthday.to_date.strftime("%A")
 
 puts " "
 
-puts "Using the String class, pluralize a singular word the user enters and"
-puts "show the singular for a plural word the user enters"
+puts "Using the String class, pluralize a singular word the user enters"
+puts "Enter a single word and the plural will be displayed:"
+single_word = gets.chomp
+puts "The plural of the word is : " + single_word.pluralize
+
+puts "Now singleized a plural word the user enters"
 puts "Enter a plural word and the singular will be displayed "
 plural_word = gets.chomp
 puts "The singular of this word is : " + plural_word.singularize
