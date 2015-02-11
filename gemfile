@@ -1,9 +1,3 @@
 source 'https://rubygems.org'
 
-require 'active_support'
-require 'active_support/all'
-require 'date'
-
-gem 'activesupport'
-gem 'activesupport/all'
-gem 'date'
+gem 'rails'
