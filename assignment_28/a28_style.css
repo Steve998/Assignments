@@ -1,0 +1,28 @@
+<link href="style.css" rel="stylesheet">
+h4 {
+
+     font-family: 'Oswald', sans-serif;
+     font-size:180%;
+   }
+p  {
+    color:green;
+    font-family:arial;
+    font-size:150%;
+}
+
+h1 {
+    color:blue;
+    font-family:courier;
+    font-size:150%;
+}
+h2 {
+    color:green;
+    font-family:courier;
+    font-size:125%;
+}
+
+h3 {
+    color:red;
+    font-family:courier;
+    font-size:100%;
+}
