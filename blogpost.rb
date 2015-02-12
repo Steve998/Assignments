@@ -21,4 +21,4 @@ p.published_date = Date.today
 puts "Post 2 = #{p.word_count} words"
 b << p
 
-puts b.posts[0].body
+puts b.posts[1].body
