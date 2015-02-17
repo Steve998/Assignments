@@ -28,8 +28,12 @@ class MovieController < ApplicationController
         @ratings = counter["ratings"]
         @posters = counter["posters"]
         @posters_profile = @posters["profile"]
+        @abridged_cast = counter["abridged_cast"]
 
-          @abridged_cast = counter["abridged_cast"]
+
+
+# Reference
+# http://stackoverflow.com/questions/3963930/ruby-rails-how-to-convert-seconds-to-time
         end
       end
     end

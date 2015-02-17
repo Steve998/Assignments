@@ -26,42 +26,82 @@
   position: relative;
 }
 .h3 {
-    width: 55px;
-    height: 55px;
-    overflow: scroll;
+  width: 55px;
+  height: 55px;
+  overflow: scroll;
 }
 .pos_left {
-    position: relative;
-    left: 15px;
+  position: relative;
+  left: 15px;
 }
 
 .pos_right {
-    position: relative;
-    left: 80px;
+  position: relative;
+  left: 80px;
 }
 .pos_top {
-    position: relative;
-    top: 0px;
+  position: relative;
+  top: 0px;
 }
 .pos_top_scroll {
-    position: absolute;
-    top: 85px;
-    background-color: #00FFFF;
-    width: 450px;
-    height: 300px;
-    overflow: scroll;
-    right: 35px
+  position: absolute;
+  top: 175px;
+  background-color: #00FFFF;
+  width: 550px;
+  height: 200px;
+  overflow: scroll;
+  right: 165px
+}
+.pos_line_runtime{
+  position: absolute;
+  top: 470px;
+  right: 820px;
+  background-color: #00FFFF;
+  width: 150px;
+  height: 30px;
+
+}
+.pos_line_rating{
+  position: absolute;
+  top: 415px;
+  right: 820px;
+  background-color: #00FFFF;
+  width: 100px;
+  height: 30px;
+
 }
 .scroll {
-    background-color: #00FFFF;
-    width: 100px;
-    height: 100px;
-    overflow: scroll;
+  background-color: #00FFFF;
+  width: 100px;
+  height: 100px;
+  overflow: scroll;
 }
 
 .hidden {
-    background-color: #00FF00;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+  background-color: #00FF00;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.site_link {
+  /* unvisited link */
+  a:link {
+    color: #FF0000;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #00FF00;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #FF00FF;
+  }
+
+  /* selected link */
+  a:active {
+    color: #0000FF;
+  }
 }

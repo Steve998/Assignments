@@ -17,7 +17,7 @@
 <body>
   <form>
     <%= form_tag("movie/search", method: "get") do %>
-    <%= label_tag( "movie_title", "Movie Title") %>
+    <%= label_tag( "movie_title", "Enter Movie Title") %>
     <%= text_field_tag("movie_title") %>
     <%= submit_tag("Click Here") %>
     <% end %>
@@ -25,27 +25,23 @@
 
   <div>
 
-    <h1 class = pos_left> <%= @title %> (<%= @year %>)
+    <h1 class = pos_left> <%= @title %> (<%= @year %>)</h1>
+<h5 class = pos_left><a href="http://www.rottentomatoes.com">Visit RottenTomatoes.com</a></h5>
 
-    </h1>
     <img class = pos_right src="<%= @posters_profile %>"
-    alt="Profile Poster" style="width:280px;height:295px;border:0"<dl >
+    alt="Profile Poster" style="width:280px;height:295px;border:0" >
       <dt> <h4 class = pos_top_scroll ><%= @synopsis %></h4> </dt>
-<!--    </dl> />
-    <dl >
-      <dt > <%= @synopsis %> </dt>
-    </dl>
+
 
   </div>
-  <h3> Movie id: <%= @id %> </h3>
-  <h3> Movie title: <%= @title %> <h3>(<%= @year %>) </h3></h3>
-  <h3> Movie year: <%= @year %> </h3>
--->
-  <h2> Rating: <h2 class = h2_rating> <%= @mpaa_rating %> </h2></h2>
-  <h3> Runtime: <%= @runtime %> </h3>
-  <h3> Movie critics_consensus: <%= @critics_consensus %> </h3>
-  
-  <h3> Movie Release Date DVD: <%= @release_dates_dvd %> </h3>
-  <h3> Movie Release Date Theater: <%= @release_dates_theater %> </h3>
+
+  <h2 class = pos_left> This movie is rated  </h2> <h2 class = pos_line_rating> <%= @mpaa_rating %> </h2>
+  <h3 class = pos_left> Lenghth of movie is </h3> <h3 class = pos_line_runtime> <%= @runtime %> minutes </h3>
+
+<!--  <h3> Movie critics_consensus: <%= @critics_consensus %> </h3> -->
+
+
+  <h3 class = pos_left> Theater relese date is <%= @release_dates_theater %> </h3>
+  <h3 class = pos_left> DVD release date is <%= @release_dates_dvd %> </h3>
 
 </body>
