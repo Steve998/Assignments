@@ -1,3 +1,67 @@
 // Place all the styles related to the movie controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dl {
+  font-family: 'Arial', sans-serif;
+  font-weight:italic;
+  background-color:aliceblue;
+}
+
+.dt {
+  color:purple;
+  font-family:'Arial', sans-serif;
+  font-weight:italic;
+}
+
+.h1 {
+  color:purple;
+  font-family:'Arial', sans-serif;
+  font-weight:italic;
+}
+.h2_rating{
+  color:brown;
+  font-family:'Arial', sans-serif;
+  font-weight:bold;
+  position: relative;
+}
+.h3 {
+    width: 55px;
+    height: 55px;
+    overflow: scroll;
+}
+.pos_left {
+    position: relative;
+    left: 15px;
+}
+
+.pos_right {
+    position: relative;
+    left: 80px;
+}
+.pos_top {
+    position: relative;
+    top: 0px;
+}
+.pos_top_scroll {
+    position: absolute;
+    top: 85px;
+    background-color: #00FFFF;
+    width: 450px;
+    height: 300px;
+    overflow: scroll;
+    right: 35px
+}
+.scroll {
+    background-color: #00FFFF;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+.hidden {
+    background-color: #00FF00;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}

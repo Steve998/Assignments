@@ -1,2 +1,51 @@
-<h1>Movie Title: <%= @movie_title.capitalize %></h1>
-<h3> Movie Synopsis: <%= @synopsis %> </h3>
+<html>
+<head>
+  <title>Movie Selection Page</title>
+  <link href="movie.scss" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!--  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+-->
+</head>
+
+<body>
+  <form>
+    <%= form_tag("movie/search", method: "get") do %>
+    <%= label_tag( "movie_title", "Movie Title") %>
+    <%= text_field_tag("movie_title") %>
+    <%= submit_tag("Click Here") %>
+    <% end %>
+  </form>
+
+  <div>
+
+    <h1 class = pos_left> <%= @title %> (<%= @year %>)
+
+    </h1>
+    <img class = pos_right src="<%= @posters_profile %>"
+    alt="Profile Poster" style="width:280px;height:295px;border:0"<dl >
+      <dt> <h4 class = pos_top_scroll ><%= @synopsis %></h4> </dt>
+<!--    </dl> />
+    <dl >
+      <dt > <%= @synopsis %> </dt>
+    </dl>
+
+  </div>
+  <h3> Movie id: <%= @id %> </h3>
+  <h3> Movie title: <%= @title %> <h3>(<%= @year %>) </h3></h3>
+  <h3> Movie year: <%= @year %> </h3>
+-->
+  <h2> Rating: <h2 class = h2_rating> <%= @mpaa_rating %> </h2></h2>
+  <h3> Runtime: <%= @runtime %> </h3>
+  <h3> Movie critics_consensus: <%= @critics_consensus %> </h3>
+  
+  <h3> Movie Release Date DVD: <%= @release_dates_dvd %> </h3>
+  <h3> Movie Release Date Theater: <%= @release_dates_theater %> </h3>
+
+</body>
