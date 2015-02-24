@@ -1,0 +1,24 @@
+<p id="Post"><%= notice %></p>
+
+<p>
+  <strong>Post title:</strong>
+  <%= @post.post_title %>
+</p>
+
+<p>
+  <strong>Post body:</strong>
+  <%= @post.post_body %>
+</p>
+
+<p>
+  <strong>Post date:</strong>
+  <%= @post.post_date %>
+</p>
+
+<p>
+  <strong>Post author:</strong>
+  <%= @post.post_author %>
+</p>
+
+<h3><%= link_to 'Edit', edit_post_path(@post) %> |</h3>
+<h3><%= link_to 'Back', posts_path %></h3>
