@@ -1,4 +1,3 @@
-#questions = ["Question1? " ,"Question2? "]
 
 file = File.new("question_text.txt","r")
 questions = file.readlines

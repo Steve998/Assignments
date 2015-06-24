@@ -27,21 +27,30 @@ class PigLatin
   end
 
   # Check to see if the first letter is a vowel
-  def self.starts_with_vowel(first_letter)
-    # this should determine if it starts with a vowel
 
-    VOWELS.each do |counter|
+# New def Feb 05 clean up the start with vowel def
+def self.starts_with_vowel(first_letter)
 
-        if "#{first_letter}" == counter.to_s
+  return VOWELS.include? first_letter
 
-          return true
+end
 
-        else
-
-          return false
-
-        end
-    end
+# Replaced by the def starts with vowel above
+#  def self.starts_with_vowel(first_letter)
+#    # this should determine if it starts with a vowel
+#
+#    VOWELS.each do |counter|
+#
+#      if "#{first_letter}" == counter.to_s
+#
+#          return true
+#
+#      else
+#
+#          return false
+#
+#      end
+#    end
 
   end
 end

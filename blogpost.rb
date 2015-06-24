@@ -12,13 +12,13 @@ p.summary = "Summary 1"
 p.body = "this is the body of post 1"
 p.published_date = Date.today
 puts "Post 1 = #{p.word_count} words"
-b << p
+b.posts << p
 
 p = Post.new("Post 2")
 p.summary = "Summary 2"
 p.body = "this is the body of post 2 with more words"
 p.published_date = Date.today
 puts "Post 2 = #{p.word_count} words"
-b << p
+b.posts << p
 
 puts b.posts[1].body
