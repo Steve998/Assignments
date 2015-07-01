@@ -26,8 +26,8 @@
       <td><%= post.post_date.to_s(:long) %> </td>
       <td><%= "  " %> </td>
       <td><%= post.post_author %></td>
-      <td><%= link_to 'Show', post %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
+      <td><%= link_to 'Show current record', post %></td>
+      <td><%= link_to 'Edit current record', edit_post_path(post) %></td>
       <td><%= link_to 'Destroy Record', post, method: :delete, data: { confirm: 'Are you really sure?' } %></td>
     </tr>
     <% end %>
