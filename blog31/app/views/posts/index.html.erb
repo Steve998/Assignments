@@ -21,11 +21,11 @@
   <tbody>
     <% @posts.each do |post| %>
     <tr>
-      <td><%= post.post_title %> </td>
-      <td><%= post.post_body %></td>
-      <td><%= post.post_date.to_s(:long) %> </td>
-      <td><%= "  " %> </td>
-      <td><%= post.post_author %></td>
+      <td><%= post.post_title %> </td><br>
+      <td><%= post.post_body %></td><br>
+      <td><%= post.post_date.to_s(:long) %> </td><br>
+      <td><%= "  " %> </td><br>
+      <td><%= post.post_author %></td><br>
       <td><%= link_to 'Show Details', post %></td>
       <td><%= link_to 'Edit Details', edit_post_path(post) %></td>
       <td><%= link_to 'Destroy Record', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
